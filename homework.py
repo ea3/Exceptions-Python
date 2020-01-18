@@ -21,6 +21,20 @@ finally:
 	print('All done')
 
 ###########Write a function that asks for an integer and prints the square of it. Use a while loop with a try, except, else block to account for incorrect inputs.
+def ask():
+
+	while True:
+		try:
+			n= int(input("Enter a number: "))
+		except:
+			print("Please try again")
+			continue
+		else:
+			break
+
+	print("Your number squared is: ")
+	print(n**2)
+ask()
 
 
 
